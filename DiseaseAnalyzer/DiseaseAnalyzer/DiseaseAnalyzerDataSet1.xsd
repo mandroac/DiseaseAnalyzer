@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DiseaseAnalyzerDataSet1" targetNamespace="http://tempuri.org/DiseaseAnalyzerDataSet1.xsd" xmlns:mstns="http://tempuri.org/DiseaseAnalyzerDataSet1.xsd" xmlns="http://tempuri.org/DiseaseAnalyzerDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection ConnectionStringObject="Data Source=DESKTOP-F0TNHT6\SQLEXPRESS;Initial Catalog=DiseaseAnalyzer;Integrated Security=True" IsAppSettingsProperty="false" Modifier="Assembly" Name="desktop-f0tnht6\sqlexpress.DiseaseAnalyzer.dbo" ParameterPrefix="@" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="MedicalRecordsTableAdapter" GeneratorDataComponentClassName="MedicalRecordsTableAdapter" Name="MedicalRecords" UserDataComponentName="MedicalRecordsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="desktop-f0tnht6\sqlexpress.DiseaseAnalyzer.dbo" DbObjectName="DiseaseAnalyzer.dbo.MedicalRecords" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Record FROM dbo.MedicalRecords</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Record" DataSetColumn="Record" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DiseaseAnalyzerDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="DiseaseAnalyzerDataSet1" msprop:Generator_UserDSName="DiseaseAnalyzerDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="MedicalRecords" msprop:Generator_TableClassName="MedicalRecordsDataTable" msprop:Generator_TableVarName="tableMedicalRecords" msprop:Generator_TablePropName="MedicalRecords" msprop:Generator_RowDeletingName="MedicalRecordsRowDeleting" msprop:Generator_RowChangingName="MedicalRecordsRowChanging" msprop:Generator_RowEvHandlerName="MedicalRecordsRowChangeEventHandler" msprop:Generator_RowDeletedName="MedicalRecordsRowDeleted" msprop:Generator_UserTableName="MedicalRecords" msprop:Generator_RowChangedName="MedicalRecordsRowChanged" msprop:Generator_RowEvArgName="MedicalRecordsRowChangeEvent" msprop:Generator_RowClassName="MedicalRecordsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Record" msprop:Generator_ColumnVarNameInTable="columnRecord" msprop:Generator_ColumnPropNameInRow="Record" msprop:Generator_ColumnPropNameInTable="RecordColumn" msprop:Generator_UserColumnName="Record">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="512" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
